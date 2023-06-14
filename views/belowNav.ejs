@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="/css/belowNav.css">
+<div id="belowNav">
+    <div class="left">
+        <ul>
+            <li><a href="/buildIn">Building</a></li>
+            
+            <% for(var i = 0; i < 1; i++) {%>
+                <%if (floorID) {%>
+                    <li>></li>
+                    <li><a href="/goTofloor">Floor</a></li>
+                <%}%>
+                <%if (roomID) {%>
+                    <li>></li>
+                    <li><a href="/goToRooms">Room</a></li>
+                <%}%>
+            <%}%>
+            
+            
+        </ul>
+    </div>
+    
+    <div class="right">
+        <input type="text" placeholder="Search here">
+        <button id="search"><img src="/images/Group 19.png" alt=""></button>
+    </div>
+</div>
